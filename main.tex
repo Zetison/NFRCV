@@ -1,0 +1,287 @@
+% TeX program=lualatex
+%\documentclass{nfrcv}
+%\documentclass[grayheader,printversion]{nfrcv} % Use this for a more compact  CVs
+%\documentclass[compact,grayheader,printversion]{nfrcv} 
+\documentclass[compact,grayheader,compactrefs,printversion]{nfrcv} 
+% options:
+%  - compact: Skips the additional white space in the NFR-templates
+%  - grayheader: Use gray fill on the header of each table instead of just the first cell (varies in the NFR-templates)
+%  - compactrefs: Generates a more compact Publication list
+%  - printversion: Print the template version number on the left footer
+%  - calibri:  Use the Calibri font (Calibri or Times New Roman is a page format requirement for NFR CVs). This option requires the following files to be present: CALIBRI.TTF, CALIBRIB.TTF, CALIBRII.TTF and CALIBRIZ.TTF. The default font is Carlito (a font-metric compatible replacement for Calibri).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PLEASE NOTE: All items marked with * must be completed.
+
+% * Define your role in the project (\cbox is an unchecked box, while \cboxc is a checked box)
+\projectRole{Project manager}{\cboxc}
+\projectRole{Work package leader}{\cbox}
+\projectRole{Project partner}{\cbox}
+
+\firstName{Ola}              % *First name
+\familyName{Nordmann}        % *Family name
+\dateOfBirth{01.01.1970}     % *Date of birth
+\sex{Male}                   % *Sex
+\nationality{Norwegian}      % *Nationality
+
+% The following researcher identifiers are implemented for the field "Researcher unique identifier(s)"
+\orcid{0000-0000-0000-0000}  % ORCID
+\researcherID{I-0000-0000}   % researcherID
+
+\urlForPersonalWebsite{https://www.ntnu.edu/employees/N.N} % URL for personal website
+
+\cvversion{Template Curriculum vitae (CV) 10.05.2021} % This prints the version of the template in the footer (activated with the printversion option in the nfrcv-class)
+
+\bibliography{DonaldEKnuth} % get references from the file DonaldEKnuth.bib
+
+\makeauthorsbold{Knuth}
+
+\begin{document}
+\frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} % *
+\begin{nfrtable}
+     & Degree/Name of faculty/department, name of university/institution, country\nfrbreak
+1997 & \textbf{PhD}, Industrial Mathematics, Dept. of Mathematical Sciences, Norwegian University of Science and Technology (NTNU)\nfrbreak
+1993 & \textbf{Master of Science}, Civil Engineering, Norwegian Institute of Technology (NTH), Norway\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Positions} % * (academic, business, industry, public sector, national or international organisations)
+\subsection{Current Position}
+\begin{nfrtable}
+       & Job title/name of employer/country\nfrbreak
+2015-- & \href{https://www.ntnu.edu/employees}{\textbf{Professor}, Dept. of Mathematics, Norwegian University of Science and Technology, Norway}\nfrbreak
+2010-- & \href{https://www.sintef.no/en/all-employees/employee}{\textbf{Senior Scientist}, Dept. of Mathematics and Cybernetics, SINTEF Digital, Norway}\nfrbreak
+\end{nfrtable}
+
+\subsection{Previous positions held} % (list)
+\begin{nfrtable}
+           & Job title/name of employer/country\nfrbreak
+2010--2015 & \textbf{Associate professor}, Dept. of Mathematical Sciences, NTNU, Norway\nfrbreak
+2005--2010 & \textbf{Research manager}, Dept. of Applied Mathematics, SINTEF, Norway\nfrbreak
+1997--2010 & \textbf{Research Scientist}, Dept. of Industrial Mathematics, SINTEF, Norway\nfrbreak
+1993--1997 & \textbf{PhD Candidate}, Dept. of Mathematical Sciences, NTNU, Norway\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fellowships, awards and prizes} % Research stays abroad lasting more than three months
+\begin{nfrtable}
+     & Name of institution/country\nfrbreak
+2020 & \textbf{SIAM Fellow}, Society of Industrial and Applied Mathematics (SIAM)\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mobility} % Research stays abroad lasting more than three months
+%\subsection{Research stays abroad lasting more than three months} 
+\begin{nfrtable}
+           & Name of faculty/department/centre, name of university/institution/country\nfrbreak
+2016       & \textbf{Visiting Professor}, Dept. of Applied Mathematics and Theoretical Physics, Cambridge University, UK (5 Months, Professor N.N)\nfrbreak
+2012--2013 & \textbf{J. T. Oden Faculty Fellow}, Institute for Computational Engineering and Sciences (ICES), University of Texas at Austin, USA (12 months, Professor N.N)\nfrbreak
+\end{nfrtable}
+%\subsection{Stays abroad related to positions outside academia} 
+%\begin{nfrtable}
+%	& Name of host (business, industry, public sector, national or international organisation/country)\nfrbreak
+%	& \nfrbreak
+%\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Project management experience}
+\begin{nfrtable}
+	       & Project, role (PL: Project leader, WPL: Workpackage leader), funding from, and amount\nfrbreak
+2020--2023 & <Project name> (Acronym): \textbf{WPL}, RCN-IPN, 1.4 MEuro\nfrbreak
+2015--2021 & <Project name> (Acronym): \textbf{PL}, Equinor, 0.6 MEuro\nfrbreak
+2013--2018 & <Project name> (Acronym): \textbf{PL}, VISTA, 0.5 MEuro\nfrbreak
+2012--2017 & <Project name> (Acronym): \textbf{PL}, RCN-KPN, 2.0 MEuro\nfrbreak
+2011--2017 & <Centre name> (Acronym): \textbf{Chair of Scientific Committee}, RCN-FME, 32.0 MEuro\nfrbreak
+2008--2014 & <Project name> (Acronym): \textbf{PL}, RCN-KMB, 2.5 MEuro\nfrbreak
+2000--2006 & <Project name> (Acronym): \textbf{Member of Steering Committee}, Strategic University Program, RCN, 1.5 MEuro\nfrbreak
+2000--2004 & <Project name> (Acronym): \textbf{PL}, EU-project, 2.5 MEuro\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Supervision of graduate students and research fellows}
+\begin{nfrtable}[|p{\dateColumnWidth}|p{1cm}|p{3cm}|X|]
+	   &  No. of & Master's students/ Ph.D./Postdocs & Name of faculty/department/centre, name of university/institution/country\nfrbreak
+2010-- & 25 & Master's students & Dept. of Mathematical Sciences, NTNU, Norway\nfrbreak
+2005-- &  8 & PhD students      & 7 graduated (5 as main) at NTNU, 1 co-supervisor at UiO\nfrbreak
+2011-- &  7  & Postdocs         & All as main supervisor at Dept. of Math. Sciences, NTNU\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching activities}
+\begin{nfrtable}
+	   & Teaching position – topic, name of university/institution/country\nfrbreak
+2010-- & Teaching at Department of Mathematics (NTNU): Numerical mathematics, Finite difference methods, Finite element methods, Numerical linear algebra, Experts in teams.\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organization of meetings}
+\begin{nfrtable}
+       & Role and name of event/number of participants/country\nfrbreak
+2014   & \textbf{Chair}, <Conference name>, <City>, <Country>, <Dates Month Year>\nfrbreak
+2012-- & \textbf{Co-Chair}, <Conference name>, Trondheim, Norway. Annually\nfrbreak
+2004-- & \textbf{Member of SC}, <Conference name>, Annually\nfrbreak
+2000   & \textbf{Chair of minisymposium}, <Name of MS>, <Conference name>, <City>, <Country>, <Dates Month Year>\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Institutional responsibilities}
+\begin{nfrtable}
+           & Name of university/institution/country --- and role\nfrbreak
+2020--     & \textbf{Member} of Covid-19 Task Force, NTNU, Norway \nfrbreak
+2018--     & \textbf{Coordinator} of SINTEF <name of initiative>\nfrbreak
+2012--2016 & \textbf{Member} of Educational Committee of ECMI (\href{https://ecmiindmath.org/}{https://ecmiindmath.org/})\nfrbreak
+2014--2014 &  \textbf{Representing} SINTEF in European Energy Research Alliance (EERA) \nfrbreak
+2012--2015 & \textbf{Chair} of Committee for <topic> at NTNU\nfrbreak
+2011--2013 & \textbf{Co-Chair} {Strategy Committee on <topic> at NTNU\&SINTEF}\nfrbreak
+2010--2016 & \textbf{Member} of Board for <Name of the research program>, RCN, Norway\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Commissions of trust in academic, public or private organisations}
+%\subsection{Scientific advisory board/review board/review panel member/editorial board/scientific advisory board/reviewer/scientific evaluation/etc.} 
+\begin{nfrtable}
+           & Name of university/institution/country --- and role\nfrbreak
+2008--     & \href{http://www.cimne.com/iacm/}{IACM}: \textbf{Member} of General Council \nfrbreak
+2008--2018 & \href{http://www.noacm.org}{NoACM}: \textbf{President} of NoACM\nfrbreak
+2006--     & \href{http://www.noacm.org}{NoACM}: \textbf{Member} of Executive Committee \nfrbreak
+2004-      &  \textbf{Reviewer} for <Name of Journal 1>,  <Name of Journal 2>, ...,  <Name of Journal n>, \nfrbreak
+2000--2004 & <Name of project>: \textbf{Scientific Reviewer}, EU-Project, 2.5 MEuro\nfrbreak
+\end{nfrtable}
+%\subsection{Other commissions of trust - in business, organisations or public life} 
+%\begin{nfrtable}
+%	& Name of board/body/country – and role\nfrbreak
+%    &  \nfrbreak
+%\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Memberships of academies / Scientific societies / Networks}
+\begin{nfrtable}
+       & Name of academies, scientific societies, networks\nfrbreak
+2017-- & \href{https://www.ntva.no/}{Norges Tekniske Vitenskapsakademi (NTVA)}: \textbf{Elected member}\nfrbreak
+2013-- & \href{http://www.ngfweb.no/}{Norsk geofysisk forening}\nfrbreak
+2000-- & \href{https://siam.org/}{Society of Industrial and Applied Mathematics (SIAM)}\nfrbreak
+2000-- & \href{http://noacm.no/}{Nordic Association of Computational Mechanics (NoACM})\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Major collaborations}
+\begin{nfrtable}[|p{8cm}|X|]
+Name of institution & Topic\nfrbreak
+<Name of institution 1> & Topic 1, Topic 2, Topic 3\nfrbreak
+<Name of institution 1> & Topic 1, Topic 2, Topic 3\nfrbreak
+<Name of institution 1> & Topic 1, Topic 2, Topic 3\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TRACK RECORD
+%In the track record, please provide:
+%    1. The total number of publications during the career.
+%    2. A list of up to ten publications in major national or international peer-reviewed multidisciplinary scientific journals and/or in the leading national or international peer-reviewed journals, peer-reviewed conferences proceedings and/or monographs of their respective research fields. Indicate, if possible, the number of citations (excluding self- citations).
+%    3. Research monographs and any translations thereof (if applicable). 
+%    4. Granted patent(s) (if applicable).
+%    5. Examples of leadership/participation in industrial or public innovation or design and/or highlights from research or innovation with societal impact (if applicable).
+%    6. Leadership of field work or research expeditions (if applicable).	
+%    7. Invited presentations to peer-reviewed national or international conferences and/or international advanced schools (if applicable).
+%    8. Experiences from major research communication, dissemination or outreach activities and/or invited presentations in public conferences (if applicable).
+\trackrecord % Print track record title
+\section{Publications statistics} % 1
+\begin{nfrtable}[|p{7cm}|X|]
+	Type of publication & Statistics (No. of publications, No. of citations, h-index)\nfrbreak
+Edited books / Special journal issues & xx / yy\nfrbreak
+Google / Scopus / Web of Science & (>xxx, yyyy, zz) / (xxx, yyyy, zz) / (xxx, yyyy, zzz)\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PUBLICATIONS} % 2
+\addReferences{%
+DBLP:journals/cacm/KnuthS21,%
+DBLP:books/daglib/0030428,%
+DBLP:books/daglib/0030427,%
+DBLP:journals/rsa/JansonKLP93,%
+DBLP:journals/tamm/KnuthS09,%
+DBLP:journals/tamm/KnuthH09,%
+DBLP:journals/tamm/Knuth09,%
+DBLP:journals/tamm/KnuthL09,%
+DBLP:journals/cacm/BachelorDKS61,%
+DBLP:journals/tamm/KimJPK02}
+%\addReferences{*} % Use this instead to get all references
+
+\textit{Information on selected publications}: All the selected publications are deliverables of research projects I have initiated and lead. (Citations from Google Scholar)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research monographs and any translations thereof} % 3
+\begin{nfrtable}
+	& Title\nfrbreak
+	& \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Granted patent(s)} % 4
+\begin{nfrtable}
+	& Name\nfrbreak
+	& \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Examples of leadership/participation in industrial or public innovation or design and/or highlights from research or innovation with societal impact} % 5
+\begin{nfrtable}
+	& Name\nfrbreak
+	& \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership of field work or research expeditions} % 6
+\begin{nfrtable}
+	& Name\nfrbreak
+	& \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Invited presentations and/or international advanced schools} % 7
+\begin{nfrtable}
+           & Role – Conference/School – Location\nfrbreak
+2018--     & \textbf{Plenary speaker} <Conference name>, <City>, <Country>, <Dates Month Year>\nfrbreak
+2017       & \textbf{Semi-Plenary speaker}, <Conference name>, <City>, <Country>, <Dates Month Year>\nfrbreak
+2015       & \textbf{Keynote speaker}, <Conference name>, <City>, <Country>, <Dates Month Year>\nfrbreak
+2012       & \textbf{Organiser and Lecturer}, <Advanced school name>, <City>, <Country>, <Dates Month Year>\nfrbreak
+2011--2020 & \textbf{Member} of the Scientific Committee for \href{https://www.sintef.no/projectweb/geilowinterschool/about/}{eVita Winter School}, Geilo, Norway (Annually)\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiences from major research communication, dissemination or outreach activities and/or invited presentations in public conferences} % 8
+\begin{nfrtable}
+	& Name\nfrbreak
+	& \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Major contributions to the early careers of excellent researchers}
+\begin{nfrtable}
+           & Description - Role\nfrbreak
+2006--     & Through the projects <Project 1, ... Project n> me and my colleagues at NTNU
+and SINTEF established a research environment for PhD and Postdoc at international top
+level. Below are two candidates mentioned that benefited from this in their early career.\nfrbreak
+2010--2015 & Person 1: I have been his main supervisor for his MSc- and PhD studies at Dept. of Mathematical Sciences, NTNU. His first journal paper is Highly
+cited (WEB of Science). Now he is a highly regarded scientist at SINTEF.\nfrbreak
+2012--2015 & Person 2: I was her main Postdoc supervisor. She is now holding the highly prestigious position at Dept. <name of department>, NTNU.\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership in industrial innovation or design}
+\begin{nfrtable}
+           & Description - Role\nfrbreak
+1997--2003 & (E.g.  <Name of project(s)> – Project Manager and Principal Investigator for development of an innovative design of <something> for the <name of industrial sector> industry. The new design resulted in a significant increased profitability for <name of industrial company>.)\nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Key expertise relevant for my role in the current application}
+\addKeyExpertise{\textbf{Computational Mathematics}: (E.g. Development of new theories/methods within applied mathematics and
+numerical analysis to make robust and efficient numerical software programs for challenging applications
+in science and technology). \textbf{Initiating and leading new research initiatives}: <Mention the initiatives>.
+\textbf{Scientific leadership}: (E.g. Have more than two decades experiences with being member of scientific steering
+committees for national research programs and international organisations. Notably, I was Chair of
+<name of committee and duration> and President for <name of organisations and duration>).
+\textbf{International relations}: (E.g. Broad network relevant for <the topic for which the CV is to be used for> established through <give specific examples>.)}
+\end{document}
