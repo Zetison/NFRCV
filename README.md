@@ -1,1 +1,2 @@
 # NFRCV
+The NFRCV template was created to provide a LaTeX alternative to the template in Word at \[[www.forskningsradet.no](https://www.forskningsradet.no/siteassets/utlysninger/vedlegg-utlysninger/cv-template-researchers.docx)\]. The template is obtained with the options [printversion,calibri]. The calibri (font) option requires licensed microsoft files which can be obtained from the Windows OS (search for "calibri" in the C:\Windows\WinSxS folder). The default font is Carlito which is close to identical to the Calibri font.
