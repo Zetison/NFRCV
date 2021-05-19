@@ -1,0 +1,118 @@
+% TeX program=lualatex
+\documentclass[printversion]{nfrcv} 
+% options:
+%  - compact: Skips the additional white space in the NFR-templates
+%  - grayheader: Use gray fill on the header of each table instead of just the first cell (varies in the NFR-templates)
+%  - compactrefs: Generates a more compact Publication list
+%  - printversion: Print the template version number on the left footer
+%  - calibri:  Use the Calibri font (Calibri or Times New Roman is a page format requirement for NFR CVs). This option requires the following files to be present: CALIBRI.TTF, CALIBRIB.TTF, CALIBRII.TTF and CALIBRIZ.TTF. The default font is Carlito (a font-metric compatible replacement for Calibri).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PLEASE NOTE: All items marked with * must be completed.
+% The maximum page limit is 4 pages. (It is not possible to upload an attachment that exceeds 4 pages). 
+% You should delete all non-applicable sections/boxes, when filling in the CV.
+
+% * Define your role in the project (\cbox is an unchecked box, while \cboxc is a checked box)
+\projectRole{Project manager}{\cboxc}
+\projectRole{Work package leader}{\cbox}
+\projectRole{Project partner}{\cbox}
+
+\firstName{Ola}              % *First name
+\familyName{Nordmann}        % *Family name
+\dateOfBirth{dd.mm.yyyy}     % *Date of birth
+\sex{Male}                   % *Sex
+\nationality{Norwegian}      % *Nationality
+
+\cvversion{Template Curriculum vitae (CV) 10.05.2021} % This prints the version of the template in the footer (activated with the printversion option in the nfrcv-class)
+
+
+\bibliography{DonaldEKnuth} % get references from the file DonaldEKnuth.bib
+
+\makeauthorsbold{Knuth}
+
+\begin{document}
+\frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Higher education/other training} % *
+\begin{nfrtable}[|p{\dateColumnWidth}|p{3cm}|X|]
+     & Subjects/degree/ & Name of institution, country\nfrbreak
+yyyy & & \nfrbreak
+yyyy & & \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Positions} % * (academic, business, industry, public sector, national or international organisations)
+\subsection{Current Position}
+\begin{nfrtable}
+       & Job title/name of employer/country\nfrbreak
+yyyy-- & \nfrbreak
+\end{nfrtable}
+
+\subsection{Previous positions held} % (list)
+\begin{nfrtable}
+           & Job title/name of employer/country\nfrbreak
+yyyy--yyyy & \nfrbreak
+yyyy--yyyy & \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Project management experience}
+\begin{nfrtable}
+	       & Project/topic/role in project/funding from\nfrbreak
+yyyy--yyyy & \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience from relevant research \& innovation activities}
+\begin{nfrtable}
+           & Project/type of R\&I activity and R\&I content/role and tasks/funding from\nfrbreak
+yyyy--yyyy & \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience from national/international collaboration/networking}
+\begin{nfrtable}
+           & Activity or project / tasks and responsibilities / context/programme/framework of the collaboration and names of key partners (companies, institutions) \nfrbreak
+yyyy--yyyy & \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER MERITS RELEVANT TO THE PROJECT
+% * Publications, technical reports, peer-review assignments, etc.
+% * Presentations at workshops or conferences (national/international level)
+% * Positions in professional associations / networks
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PUBLICATIONS} % 2
+\subsection{Journal papers}
+\addReferences{%
+DBLP:books/daglib/0030428,%
+DBLP:books/daglib/0030427,%
+DBLP:journals/rsa/JansonKLP93,%
+DBLP:journals/tamm/KnuthS09,%
+DBLP:journals/tamm/KnuthH09,%
+DBLP:journals/tamm/KnuthL09,%
+DBLP:journals/cacm/BachelorDKS61,%
+DBLP:journals/tamm/KimJPK02}
+
+\subsection{Presentations at workshops or conferences}
+\addReferences{DBLP:journals/cacm/KnuthS21,DBLP:journals/tamm/Knuth09}
+%\addReferences{*} % Use this instead to get all references
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Positions in professional associations/networks} % 5
+\begin{nfrtable}
+	       & Description - Role\nfrbreak
+yyyy--yyyy & \nfrbreak
+\end{nfrtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Key expertise relevant for my role in the current application}
+\addKeyExpertise{\textbf{Computational Mathematics}: (E.g. Development of new theories/methods within applied mathematics and
+numerical analysis to make robust and efficient numerical software programs for challenging applications
+in science and technology). \textbf{Initiating and leading new research initiatives}: <Mention the initiatives>.
+\textbf{Scientific leadership}: (E.g. Have more than two decades experiences with being member of scientific steering
+committees for national research programs and international organisations. Notably, I was Chair of
+<name of committee and duration> and President for <name of organisations and duration>).
+\textbf{International relations}: (E.g. Broad network relevant for <the topic for which the CV is to be used for> established through <give specific examples>.)}
+\end{document}
