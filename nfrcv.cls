@@ -71,7 +71,7 @@
 \newcommand*{\@researcherID}{}
 \newcommand*{\researcherID}{\renewcommand*{\@researcherID}}
 
-\newcommand*{\@urlForPersonalWebsite}{Set with \texttt{\textbackslash urlForPersonalWebsite\{\}}}
+\newcommand*{\@urlForPersonalWebsite}{} % 
 \newcommand*{\urlForPersonalWebsite}{\renewcommand*{\@urlForPersonalWebsite}}
 
 \RequirePackage{parskip}
@@ -148,7 +148,7 @@
   Researcher unique identifier: & \multicolumn{3}{l|}{\ifx\@orcid\empty\relax\else ORCID:~\href{https://orcid.org/\@orcid}{\@orcid}\hspace{1em}\fi\ifx\@researcherID\empty\relax\else ResearcherID:~\href{https://www.researcherid.com/rid/\@researcherID}{\@researcherID}\hspace{1em}\fi} \nfrbreak
   \fi
   % Only include "URL for personal website"-row if \urlForPersonalWebsite is given
-  \ifx\@urlForPersonalWebsite\empty\relax\else\if@grayheader\cellcolor{nfrgray}\fi
+  \ifx\@urlForPersonalWebsite\empty\else\if@grayheader\cellcolor{nfrgray}\fi
   URL for personal website: & \multicolumn{3}{l|}{ \href{\@urlForPersonalWebsite}{\@urlForPersonalWebsite}} \nfrbreak
   \fi
 \end{tabularx}
